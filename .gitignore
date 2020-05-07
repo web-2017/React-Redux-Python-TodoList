@@ -1,0 +1,27 @@
+node_modules
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycashe__/
+db.sqlite3
+media
+
+*.py[cod]
+*$py.class
+
+*.so
+
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+var/
+*.egg-info
+*.egg
+MANIFEST
