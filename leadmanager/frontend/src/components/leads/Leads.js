@@ -17,7 +17,7 @@ export class Leads extends Component {
   render() {
     return (
       <Fragment>
-        <h1>Leads</h1>
+        <h2>Leads</h2>
         <table className='table table-striped'>
           <thead>
             <tr>
@@ -40,6 +40,7 @@ export class Leads extends Component {
                     onClick={this.props.deleteLeads.bind(this, lead.id)}
                     className='btn btn-danger btn-sm'
                   >
+                    {' '}
                     Delete
                   </button>
                 </td>
@@ -52,8 +53,8 @@ export class Leads extends Component {
   }
 }
 
-const mapStateTpProps = (state) => ({
+const mapStateToProps = (state) => ({
   leads: state.leadsReducer.leads,
 })
 
-export default connect(mapStateTpProps, { getLeads, deleteLeads })(Leads)
+export default connect(mapStateToProps, { getLeads, deleteLeads })(Leads)
